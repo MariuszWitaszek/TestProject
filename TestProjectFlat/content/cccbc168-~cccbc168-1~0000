@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RestoreDataItem Version="1" DeletionDate="2026-10-23 07:21:36Z" DisplayName="iC9226M-EC : iC9226M-EC">
+    <NodeData DomainId="e639c0f9-db09-46f4-abf7-50216a13f220" SolutionId="606e2993-1c57-411c-b0d2-c57a13c52bbf" NodeId="cccbc168-13e7-4903-b6df-0937cde03687" ParentId="b614ac7b-e691-415d-9ea0-2d9d7a7e1117" PredecessorId="230d19e6-ad5a-4630-a878-ef3f09d1f152" Position="13" Kind="Instance" />
+</RestoreDataItem>

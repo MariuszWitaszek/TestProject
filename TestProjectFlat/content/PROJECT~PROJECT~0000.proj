@@ -61,7 +61,7 @@
       <Folder Include="RecycleBin">
          <Id>cbe9b325-ccd8-43c4-ac54-e5334b92fee9</Id>
          <FolderType>RecycleBin</FolderType>
-         <LastestItemNo>1</LastestItemNo>
+         <LastestItemNo>2</LastestItemNo>
          <Visible>false</Visible>
          <ParentIndex>0</ParentIndex>
       </Folder>
@@ -69,7 +69,7 @@
          <Id>c7951d45-9cf1-445b-b792-fcd9df29d678</Id>
          <FolderType>RecycleBinItem</FolderType>
          <ItemNo>1</ItemNo>
-         <ParentIndex>0</ParentIndex>
+         <ParentIndex>1</ParentIndex>
       </Folder>
       <Folder Include="RecycleBin\8b693dc2-7ce4-4066-8a7b-f7871133be70\CFG_8B693DC27CE440668A7BF7871133BE70">
          <Id>8b693dc2-7ce4-4066-8a7b-f7871133be70</Id>
@@ -405,7 +405,18 @@
          <TypeRevision>1.0.0</TypeRevision>
          <ParentIndex>1</ParentIndex>
       </Folder>
-      <Folder Include="Hardware\iC9226M-EC">
+      <Folder Include="Logical Elements\Main.pou">
+         <Id>57bb5565-e646-44ef-9a83-c218515dab00</Id>
+         <FolderType>PouFolder</FolderType>
+         <ParentIndex>3</ParentIndex>
+      </Folder>
+      <Folder Include="RecycleBin\cccbc168-13e7-4903-b6df-0937cde03687">
+         <Id>f10e40f3-0d0f-408e-8057-95f941fd1c14</Id>
+         <FolderType>RecycleBinItem</FolderType>
+         <ItemNo>2</ItemNo>
+         <ParentIndex>0</ParentIndex>
+      </Folder>
+      <Folder Include="RecycleBin\cccbc168-13e7-4903-b6df-0937cde03687\iC9226M-EC">
          <Id>cccbc168-13e7-4903-b6df-0937cde03687</Id>
          <FolderType>DeviceInstance</FolderType>
          <AllowReordering>true</AllowReordering>
@@ -413,22 +424,7 @@
          <TypeId>{CAD2B21F-101F-4775-9BF0-8CEA262D0600}</TypeId>
          <TypeName>iC9226M-EC</TypeName>
          <TypeRevision>A/2025.6.0</TypeRevision>
-         <ParentIndex>13</ParentIndex>
-      </Folder>
-      <Folder Include="Hardware\iC9226M-FSoE">
-         <Id>fd62fcd4-b190-4d42-896f-a8d46733189d</Id>
-         <FolderType>DeviceInstance</FolderType>
-         <AllowReordering>true</AllowReordering>
-         <InstanceId>be1cd34e-a8da-46ba-9d71-746741b0e48b</InstanceId>
-         <TypeId>{55AF2860-418A-41BA-840C-9040C7B0CB0F}</TypeId>
-         <TypeName>iC9226M-FSoE</TypeName>
-         <TypeRevision>A/2025.6.0</TypeRevision>
-         <ParentIndex>14</ParentIndex>
-      </Folder>
-      <Folder Include="Logical Elements\Main.pou">
-         <Id>57bb5565-e646-44ef-9a83-c218515dab00</Id>
-         <FolderType>PouFolder</FolderType>
-         <ParentIndex>3</ParentIndex>
+         <ParentIndex>0</ParentIndex>
       </Folder>
    </ItemGroup>
    <ItemGroup>
@@ -824,13 +820,8 @@
          <Visible>False</Visible>
          <ParentIndex>4</ParentIndex>
       </InstancePropertiesDocument>
-      <InstancePropertiesDocument Include="Hardware\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52.iprop">
+      <InstancePropertiesDocument Include="RecycleBin\cccbc168-13e7-4903-b6df-0937cde03687\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52.iprop">
          <Id>24581ac0-450b-4872-b3cb-fd01e53c48f5</Id>
-         <Visible>False</Visible>
-         <ParentIndex>5</ParentIndex>
-      </InstancePropertiesDocument>
-      <InstancePropertiesDocument Include="Hardware\iC9226M-FSoE\be1cd34e-a8da-46ba-9d71-746741b0e48b.iprop">
-         <Id>61d2b7bf-13ee-42df-97df-9d0b870f7648</Id>
          <Visible>False</Visible>
          <ParentIndex>5</ParentIndex>
       </InstancePropertiesDocument>
@@ -920,14 +911,8 @@
          <Visible>False</Visible>
          <ParentIndex>5</ParentIndex>
       </DeviceInstanceDocument>
-      <DeviceInstanceDocument Include="Hardware\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52.ds">
+      <DeviceInstanceDocument Include="RecycleBin\cccbc168-13e7-4903-b6df-0937cde03687\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52.ds">
          <Id>6e8c50b6-3bc4-493a-ba83-766323814fff</Id>
-         <Visible>False</Visible>
-         <GlobalAreaNetworkMember>True</GlobalAreaNetworkMember>
-         <ParentIndex>6</ParentIndex>
-      </DeviceInstanceDocument>
-      <DeviceInstanceDocument Include="Hardware\iC9226M-FSoE\be1cd34e-a8da-46ba-9d71-746741b0e48b.ds">
-         <Id>4472cc03-5c74-4313-81e1-e3af345aada6</Id>
          <Visible>False</Visible>
          <GlobalAreaNetworkMember>True</GlobalAreaNetworkMember>
          <ParentIndex>6</ParentIndex>
@@ -1538,113 +1523,58 @@
          <Visible>False</Visible>
          <ParentIndex>4</ParentIndex>
       </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52_EIP_Master.station">
+      <StationDocument Include="RecycleBin\cccbc168-13e7-4903-b6df-0937cde03687\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52_EIP_Master.station">
          <Id>b93f47d1-ac5e-4e20-9669-c42a818b9446</Id>
          <Visible>False</Visible>
          <ParentIndex>0</ParentIndex>
       </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52_PN_Master.station">
+      <StationDocument Include="RecycleBin\cccbc168-13e7-4903-b6df-0937cde03687\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52_PN_Master.station">
          <Id>fa98ba17-18a7-4f0e-b5ee-2fe92ff143e1</Id>
          <Visible>False</Visible>
          <ParentIndex>1</ParentIndex>
       </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52_SliceBus_Master.station">
+      <StationDocument Include="RecycleBin\cccbc168-13e7-4903-b6df-0937cde03687\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52_SliceBus_Master.station">
          <Id>244ec5e5-03fe-4237-a67b-e328f52cf841</Id>
          <Visible>False</Visible>
          <ParentIndex>2</ParentIndex>
       </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52_YasHmi_Master.station">
+      <StationDocument Include="RecycleBin\cccbc168-13e7-4903-b6df-0937cde03687\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52_YasHmi_Master.station">
          <Id>b5c00f06-e01b-4a4c-bfb4-f6fc5b63d409</Id>
          <Visible>False</Visible>
          <ParentIndex>3</ParentIndex>
       </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52_MotionGroups_Master.station">
+      <StationDocument Include="RecycleBin\cccbc168-13e7-4903-b6df-0937cde03687\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52_MotionGroups_Master.station">
          <Id>f64ca856-fff9-4cf4-ac9b-8cd1b76df735</Id>
          <Visible>False</Visible>
          <ParentIndex>4</ParentIndex>
       </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_7_EIP_Master.station">
+      <StationDocument Include="RecycleBin\cccbc168-13e7-4903-b6df-0937cde03687\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_7_EIP_Master.station">
          <Id>95f91019-d7ca-4988-9ac7-73bf038d5925</Id>
          <Visible>False</Visible>
          <ParentIndex>7</ParentIndex>
       </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_4_PN_Master.station">
+      <StationDocument Include="RecycleBin\cccbc168-13e7-4903-b6df-0937cde03687\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_4_PN_Master.station">
          <Id>35ca3193-16b1-44ea-b9f7-6f6e7ceb961e</Id>
          <Visible>False</Visible>
          <ParentIndex>8</ParentIndex>
       </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_SliceBus_SliceBus_Master.station">
+      <StationDocument Include="RecycleBin\cccbc168-13e7-4903-b6df-0937cde03687\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_SliceBus_SliceBus_Master.station">
          <Id>2259dce9-ebd9-4dc3-b867-c02719eeb6ab</Id>
          <Visible>False</Visible>
          <ParentIndex>9</ParentIndex>
       </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_ecat_ETHERCAT_Master.station">
+      <StationDocument Include="RecycleBin\cccbc168-13e7-4903-b6df-0937cde03687\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_ecat_ETHERCAT_Master.station">
          <Id>8b7ff9cd-ebfd-4f89-93ae-6a44fefcc1cb</Id>
          <Visible>False</Visible>
          <ParentIndex>10</ParentIndex>
       </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_yashmi_YasHmi_Master.station">
+      <StationDocument Include="RecycleBin\cccbc168-13e7-4903-b6df-0937cde03687\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_yashmi_YasHmi_Master.station">
          <Id>c5095478-e638-44ba-8543-5f1eb75e8548</Id>
          <Visible>False</Visible>
          <ParentIndex>11</ParentIndex>
       </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_mcg_MotionGroups_Master.station">
+      <StationDocument Include="RecycleBin\cccbc168-13e7-4903-b6df-0937cde03687\iC9226M-EC\c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_mcg_MotionGroups_Master.station">
          <Id>5f760966-af69-4ffa-8b8a-ab638801cd20</Id>
-         <Visible>False</Visible>
-         <ParentIndex>12</ParentIndex>
-      </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-FSoE\be1cd34e-a8da-46ba-9d71-746741b0e48b_EIP_Master.station">
-         <Id>ff821340-3ef2-47a1-beb7-c67e67cf28f1</Id>
-         <Visible>False</Visible>
-         <ParentIndex>0</ParentIndex>
-      </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-FSoE\be1cd34e-a8da-46ba-9d71-746741b0e48b_PN_Master.station">
-         <Id>778d775f-e2da-4972-a35c-4ba3ada6fada</Id>
-         <Visible>False</Visible>
-         <ParentIndex>1</ParentIndex>
-      </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-FSoE\be1cd34e-a8da-46ba-9d71-746741b0e48b_SliceBus_Master.station">
-         <Id>2c62fd90-0cbe-4175-a3d4-52ffd385c48e</Id>
-         <Visible>False</Visible>
-         <ParentIndex>2</ParentIndex>
-      </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-FSoE\be1cd34e-a8da-46ba-9d71-746741b0e48b_YasHmi_Master.station">
-         <Id>75ab5fe1-2051-4c2f-ba90-2673df99c0a0</Id>
-         <Visible>False</Visible>
-         <ParentIndex>3</ParentIndex>
-      </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-FSoE\be1cd34e-a8da-46ba-9d71-746741b0e48b_MotionGroups_Master.station">
-         <Id>e19cee2f-7ef4-4163-9af4-3a9cf7dfe58f</Id>
-         <Visible>False</Visible>
-         <ParentIndex>4</ParentIndex>
-      </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-FSoE\be1cd34e-a8da-46ba-9d71-746741b0e48b.L7_7_EIP_Master.station">
-         <Id>e4ee4b3b-d722-44e4-a07a-e5c24ce137f9</Id>
-         <Visible>False</Visible>
-         <ParentIndex>7</ParentIndex>
-      </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-FSoE\be1cd34e-a8da-46ba-9d71-746741b0e48b.L7_4_PN_Master.station">
-         <Id>320aceb3-eecb-44e1-aec1-a070321019c0</Id>
-         <Visible>False</Visible>
-         <ParentIndex>8</ParentIndex>
-      </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-FSoE\be1cd34e-a8da-46ba-9d71-746741b0e48b.L7_SliceBus_SliceBus_Master.station">
-         <Id>f4f8b668-0145-4c23-9518-c4730b04752c</Id>
-         <Visible>False</Visible>
-         <ParentIndex>9</ParentIndex>
-      </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-FSoE\be1cd34e-a8da-46ba-9d71-746741b0e48b.L7_ecat_ETHERCAT_Master.station">
-         <Id>77de4f8a-f5b3-481e-9b53-c903d4640fc3</Id>
-         <Visible>False</Visible>
-         <ParentIndex>10</ParentIndex>
-      </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-FSoE\be1cd34e-a8da-46ba-9d71-746741b0e48b.L7_yashmi_YasHmi_Master.station">
-         <Id>1fa6272f-6acb-441f-a0e2-a10b5b5c7cfb</Id>
-         <Visible>False</Visible>
-         <ParentIndex>11</ParentIndex>
-      </StationDocument>
-      <StationDocument Include="Hardware\iC9226M-FSoE\be1cd34e-a8da-46ba-9d71-746741b0e48b.L7_mcg_MotionGroups_Master.station">
-         <Id>940afd28-f8ff-4f0a-a933-0d4953c7dbf4</Id>
          <Visible>False</Visible>
          <ParentIndex>12</ParentIndex>
       </StationDocument>
@@ -1874,6 +1804,10 @@
    <ItemGroup>
       <RestoreDocument Include="RecycleBin\8b693dc2-7ce4-4066-8a7b-f7871133be70\8b693dc2-7ce4-4066-8a7b-f7871133be70">
          <Id>93bd4193-2472-41d4-8b3e-889c8cfc48dc</Id>
+         <ParentIndex>1</ParentIndex>
+      </RestoreDocument>
+      <RestoreDocument Include="RecycleBin\cccbc168-13e7-4903-b6df-0937cde03687\cccbc168-13e7-4903-b6df-0937cde03687">
+         <Id>7fa9b1d5-9fa3-446b-8223-02016aafc6fc</Id>
          <ParentIndex>1</ParentIndex>
       </RestoreDocument>
    </ItemGroup>

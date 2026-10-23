@@ -93,34 +93,6 @@
           </folder>
         </folder>
       </folder>
-      <folder name="iC9226M-EC">
-        <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52_EIP_Master.station" id="iC9226M-E~c08b66a2-4~0000.station" />
-        <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52_PN_Master.station" id="iC9226M-E~c08b66a2-4~0001.station" />
-        <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52_SliceBus_Master.station" id="iC9226M-E~c08b66a2-4~0002.station" />
-        <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52_YasHmi_Master.station" id="iC9226M-E~c08b66a2-4~0003.station" />
-        <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52_MotionGroups_Master.station" id="iC9226M-E~c08b66a2-4~0004.station" />
-        <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_7_EIP_Master.station" id="iC9226M-E~c08b66a2-4~0005.station" />
-        <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_4_PN_Master.station" id="iC9226M-E~c08b66a2-4~0006.station" />
-        <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_SliceBus_SliceBus_Master.station" id="iC9226M-E~c08b66a2-4~0007.station" />
-        <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_ecat_ETHERCAT_Master.station" id="iC9226M-E~c08b66a2-4~0008.station" />
-        <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_yashmi_YasHmi_Master.station" id="iC9226M-E~c08b66a2-4~0009.station" />
-        <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_mcg_MotionGroups_Master.station" id="iC9226M-E~c08b66a2-4~000a.station" />
-        <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52.ds" id="iC9226M-E~c08b66a2-4~000b.ds" />
-      </folder>
-      <folder name="iC9226M-FSoE">
-        <file name="be1cd34e-a8da-46ba-9d71-746741b0e48b_EIP_Master.station" id="iC9226M-F~be1cd34e-a~0000.station" />
-        <file name="be1cd34e-a8da-46ba-9d71-746741b0e48b_PN_Master.station" id="iC9226M-F~be1cd34e-a~0001.station" />
-        <file name="be1cd34e-a8da-46ba-9d71-746741b0e48b_SliceBus_Master.station" id="iC9226M-F~be1cd34e-a~0002.station" />
-        <file name="be1cd34e-a8da-46ba-9d71-746741b0e48b_YasHmi_Master.station" id="iC9226M-F~be1cd34e-a~0003.station" />
-        <file name="be1cd34e-a8da-46ba-9d71-746741b0e48b_MotionGroups_Master.station" id="iC9226M-F~be1cd34e-a~0004.station" />
-        <file name="be1cd34e-a8da-46ba-9d71-746741b0e48b.L7_7_EIP_Master.station" id="iC9226M-F~be1cd34e-a~0005.station" />
-        <file name="be1cd34e-a8da-46ba-9d71-746741b0e48b.L7_4_PN_Master.station" id="iC9226M-F~be1cd34e-a~0006.station" />
-        <file name="be1cd34e-a8da-46ba-9d71-746741b0e48b.L7_SliceBus_SliceBus_Master.station" id="iC9226M-F~be1cd34e-a~0007.station" />
-        <file name="be1cd34e-a8da-46ba-9d71-746741b0e48b.L7_ecat_ETHERCAT_Master.station" id="iC9226M-F~be1cd34e-a~0008.station" />
-        <file name="be1cd34e-a8da-46ba-9d71-746741b0e48b.L7_yashmi_YasHmi_Master.station" id="iC9226M-F~be1cd34e-a~0009.station" />
-        <file name="be1cd34e-a8da-46ba-9d71-746741b0e48b.L7_mcg_MotionGroups_Master.station" id="iC9226M-F~be1cd34e-a~000a.station" />
-        <file name="be1cd34e-a8da-46ba-9d71-746741b0e48b.ds" id="iC9226M-F~be1cd34e-a~000b.ds" />
-      </folder>
     </folder>
     <folder name="Logical Elements">
       <file name="GeneratedDataTypes.dt" id="Logical E~GeneratedD~0000.dt" />
@@ -227,6 +199,23 @@
           <folder name="MotionGroups_Master">
             <file name="bc23f5f5-2051-46e9-b006-89617605605a.L7_mcg_MotionGroups_Master.station" id="MotionGro~bc23f5f5-2~0000.station" />
           </folder>
+        </folder>
+      </folder>
+      <folder name="cccbc168-13e7-4903-b6df-0937cde03687">
+        <file name="cccbc168-13e7-4903-b6df-0937cde03687" id="cccbc168-~cccbc168-1~0000" />
+        <folder name="iC9226M-EC">
+          <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52_EIP_Master.station" id="iC9226M-E~c08b66a2-4~0000.station" />
+          <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52_PN_Master.station" id="iC9226M-E~c08b66a2-4~0001.station" />
+          <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52_SliceBus_Master.station" id="iC9226M-E~c08b66a2-4~0002.station" />
+          <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52_YasHmi_Master.station" id="iC9226M-E~c08b66a2-4~0003.station" />
+          <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52_MotionGroups_Master.station" id="iC9226M-E~c08b66a2-4~0004.station" />
+          <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52.ds" id="iC9226M-E~c08b66a2-4~0005.ds" />
+          <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_7_EIP_Master.station" id="iC9226M-E~c08b66a2-4~0006.station" />
+          <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_4_PN_Master.station" id="iC9226M-E~c08b66a2-4~0007.station" />
+          <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_SliceBus_SliceBus_Master.station" id="iC9226M-E~c08b66a2-4~0008.station" />
+          <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_ecat_ETHERCAT_Master.station" id="iC9226M-E~c08b66a2-4~0009.station" />
+          <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_yashmi_YasHmi_Master.station" id="iC9226M-E~c08b66a2-4~000a.station" />
+          <file name="c08b66a2-45f9-44c8-986b-4c4e10049d52.L7_mcg_MotionGroups_Master.station" id="iC9226M-E~c08b66a2-4~000b.station" />
         </folder>
       </folder>
     </folder>
