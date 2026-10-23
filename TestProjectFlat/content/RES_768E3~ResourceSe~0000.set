@@ -1,0 +1,5 @@
+{ Type('IC9226M-EC') }
+RESOURCE PLC
+{ DeviceProfileWorksheet('DeviceProfile', Id := '4763f0bc-a545-4ceb-8437-06f236b66063') }
+
+END_RESOURCE

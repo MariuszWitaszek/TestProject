@@ -1,0 +1,46 @@
+{ CustomGroupDefinition('fb84caa8-36a3-47d9-8bf0-95ff0e8a7b24', 'Default') }
+{ CustomGroupDefinition('971398c9-e054-4349-a1d9-e00a1840c9f4', 'System Variables') }
+
+VAR_GLOBAL
+    PND_S1_PLC_RUN : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('18dd7b0d-c333-417d-8dfb-753cc3310358')}; (*Higher level PLC in RUN*)
+    PND_S1_VALID_DATA_CYCLE : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('030d47e3-e27d-483b-8902-f79aff42aa40')}; (*Connection to Profinet-Controller*)
+    PND_S1_OUTPUT_STATUS_GOOD : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('8b84b3be-961d-4a4b-82c7-7a28cd88735b')}; (*IOP status of the higher-level control system*)
+    PND_S1_INPUT_STATUS_GOOD : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('75e2d1db-e50a-435b-910b-f10299219743')}; (*IOC status of the higher-level control system*)
+    PND_S1_DATA_LENGTH : WORD { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('2a5e84f5-f298-46cb-8aab-95a493513a98')}; (*Process data length*)
+    PND_S1_OUTPUTS : PND_IO_512 { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), Origin('epd056'), Assignable(IsWritable := True), SystemVariable } {Id('403eece1-22cb-462e-b2da-b37918992af0')}; (*Output process data*)
+    PND_S1_INPUTS : PND_IO_512 { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('5d837e62-6cd4-46bc-b84d-ec62832556cf')}; (*Input process data*)
+    PND_IO_DRIVEN_BY_PLC : INT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('87feb252-d9d7-4a6b-9afe-da1244c1d665')};
+    ESM_DATA : ESM_DAT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), Origin('epd100'), Assignable(IsWritable := True), SystemVariable } {Id('86680add-c8fd-46b6-b377-5faa792c6298')};
+    RTC : RTC_TYPE { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('3f27d1ba-c030-4418-9874-ced28fd19596')};
+    DEVICE_STATE : DEVICE_STATE_TYPE { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('7bfe6949-02c7-4f8c-8850-04ddadd052f1')};
+    USER_PARTITION : PARTITION_INFO { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('21c42ddd-736a-42b9-a079-b95161a49c83')};
+    PNIO_SYSTEM_BF : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('e854fcd6-95e7-4eb5-b069-d7b696fa4baa')};
+    PNIO_SYSTEM_SF : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('09ea0f1a-5a15-4fb7-8a35-89b39b83f0c7')};
+    PNIO_MAINTENANCE_DEMANDED : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('4684cceb-780c-401e-b374-e6d2468cfe37')};
+    PNIO_MAINTENANCE_REQUIRED : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('501bddaa-abfc-4e2a-8400-8ac2a1978f6b')};
+    PNIO_CONFIG_STATUS : WORD { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('6cbca5f7-28af-4db1-8866-92775aaca144')};
+    PNIO_CONFIG_STATUS_ACTIVE : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('7991d4ce-991d-4d27-8f88-af8737bfa0d0')};
+    PNIO_CONFIG_STATUS_READY : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('99936959-2f00-4249-9085-debffc9cfd8e')};
+    PNIO_CONFIG_STATUS_CFG_FAULT : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('45cd834f-af7f-45bd-b3e1-b4394dfe794f')};
+    PNIO_FORCE_FAILSAFE : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), Origin('epd145'), Assignable(IsWritable := True), SystemVariable } {Id('012c67ad-a004-49e2-a0df-49bc33edaa6d')};
+    PNIO_FORCE_PRIMARY : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), Origin('epd159'), Assignable(IsWritable := True), SystemVariable } {Id('df8de3ca-fdb2-4262-90da-389b6c243629')};
+    IP_ACTIVE_SOCKETS AT %MW1.30000 : UINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('328b078a-3da2-4dda-a545-6834cfcc1c8e')};
+    TLS_ACTIVE_SOCKETS AT %MW1.30100 : UINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('6ecee4f9-da07-45b5-a678-a0cc9e6d670d')};
+    EC_MASTER_STATE : UDINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('2a7a80e0-99f0-4e0e-90e0-99bd63fdca3b')}; (*EtherCAT master state*)
+    EC_TOPOLOGY_OK : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('97b779d0-bbca-47bb-af86-5b87dad6d330')}; (*EtherCAT topology ok*)
+    EC_DC_IN_SYNC : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('17fc9481-5914-4592-8767-5897cea7db21')}; (*EtherCAT DC in sync*)
+    EC_SLAVE_STATE : EC_ByteArray513 { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('659dda60-a5f1-4a79-906e-19d457d9aa2f')}; (*EtherCAT slaves state*)
+    EC_SLAVE_LAST_AL_STATUS_CODE : EC_WordArray513 { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('b7e5eb9a-5ccd-416c-b7e8-145dc4300b30')}; (*EtherCAT slaves last al status code*)
+    EC_CYCLIC_LOST_FRAMES : UDINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('005a501e-5b60-42be-a61d-a09e7be42763')}; (*EtherCAT Number of frames lost in cyclic communication*)
+    EC_SLAVE_STATION_ADDRESS : EC_WordArray513 { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('b96e4f63-69f9-41e6-9497-4223b55777a3')}; (*Array with station addresses of all configured slaves*)
+    SB_DATA_VALID : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('752e6bcc-1c99-4db2-bfa3-cdea1ef7264f')}; (*The SliceBus data exchange is active*)
+    SB_TOPOLOGY_OK : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('6002cd86-b9db-461d-9646-4b19db03f591')}; (*The SliceBus topology is valid.*)
+    SB_DIAG_ALARM_STATUS : ULINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('ffdba9a9-539e-42ff-b25f-883574f00ea7')}; (*SliceBus diagnostic state for each module.*)
+    SB_DIAG_ALARM_ACK_PENDING : ULINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('f04ce73b-9615-4e46-a854-da4a8bb41415')}; (*SliceBus diagnostic alarm acknowledge state for each module.*)
+    Y_FMK_AXISCOUNT_SERVO : UINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4') } {Id('b03a2169-d097-4412-b831-7723830fecbb')}; (* (!!! DO NOT MODIFY !!! - Variable is automatically linked to device)*)
+    Y_FMK_AXISCOUNT_EXTERNAL : UINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4') } {Id('5ecec82b-ce90-4f3d-96e4-95fcba79d037')}; (* (!!! DO NOT MODIFY !!! - Variable is automatically linked to device)*)
+    Y_FMK_AXISCOUNT_VIRTUAL : UINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4') } {Id('86e5f4a2-e7cb-43b5-aa63-3edd4cc9b3e8')}; (* (!!! DO NOT MODIFY !!! - Variable is automatically linked to device)*)
+    Y_FMK_AXISCOUNT_OTHER : UINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4') } {Id('26e49d9e-add8-4e8d-af48-94d9db818cef')}; (* (!!! DO NOT MODIFY !!! - Variable is automatically linked to device)*)
+    Y_FMK_AXISCOUNT_TOTAL : UINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4') } {Id('54a759a7-b02d-4db3-8f9b-4304805c00c4')}; (* (!!! DO NOT MODIFY !!! - Variable is automatically linked to device)*)
+    Y_FMK_MOTIONSCAN_INFO : FMK_MOTIONSCAN_TYPE { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4') } {Id('ba8d300b-9b1f-45c9-9b59-f23722e8033c')}; (* (!!! DO NOT MODIFY !!! - Variable is automatically linked to device)*)
+END_VAR

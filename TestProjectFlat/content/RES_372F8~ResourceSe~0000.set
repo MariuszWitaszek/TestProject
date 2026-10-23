@@ -1,0 +1,24 @@
+{ Type('IC9226M-EC') }
+RESOURCE PLC
+{ DeviceProfileWorksheet('DeviceProfile', Id := 'fb139d92-5009-4b32-ac7f-2ee5ae4247da') }
+{ DeviceProfile(
+    Name := 'RES_372F820ABCC14FCFA78C6DC361D29312',
+    Parent := ( Name := 'IC9226M-EC', Version := '2025.6.0'), 
+    UpdateType := 'Manual',
+    CommunicationType := 'TcpIp',
+    DownloadFiles := 
+    [
+    ],
+    CommunicationParameters := 'DLL socomm.dll -ip192.168.0.2 -p41100 -to2000',
+    CommunicationMetadata := 'UniqueId=LAN (X3/X4);IsBackup=False',
+    FilesIni := 
+    [
+    ]
+)}
+
+
+TASK Main (INTERVAL := T#100ms, PRIORITY := 0) { Watchdog(T#100ms), Id('02bb4e2f-c6db-4eb0-ae51-ecfafab77d0b') };
+
+PROGRAM Main WITH Main : Main { Id('b0a80ac6-66df-43fd-974c-35e8b35d0816') };
+
+END_RESOURCE

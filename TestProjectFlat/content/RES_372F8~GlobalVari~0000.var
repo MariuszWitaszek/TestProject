@@ -1,0 +1,48 @@
+{ CustomGroupDefinition('fb84caa8-36a3-47d9-8bf0-95ff0e8a7b24', 'Default') }
+{ CustomGroupDefinition('971398c9-e054-4349-a1d9-e00a1840c9f4', 'System Variables') }
+{ CustomGroupDefinition('62716651-804b-4223-af0b-6769646191e4', 'AXIS200 Variables') }
+
+VAR_GLOBAL
+    PND_S1_PLC_RUN : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('e8b441c9-7b03-47c0-88cb-a06dba22add5')}; (*Higher level PLC in RUN*)
+    PND_S1_VALID_DATA_CYCLE : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('8c1dcc65-4cf7-49b1-a156-83e52466cc57')}; (*Connection to Profinet-Controller*)
+    PND_S1_OUTPUT_STATUS_GOOD : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('3353b5cf-09f5-40e1-a2ee-e64b4725e9dd')}; (*IOP status of the higher-level control system*)
+    PND_S1_INPUT_STATUS_GOOD : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('e201d491-3294-4d33-a4f7-4e8c96f170e4')}; (*IOC status of the higher-level control system*)
+    PND_S1_DATA_LENGTH : WORD { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('319d9326-7760-40c3-a500-c0974084a142')}; (*Process data length*)
+    PND_S1_OUTPUTS : PND_IO_512 { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), Assignable(IsWritable := True), Origin('epd056'), SystemVariable } {Id('90535cc8-efa1-4176-a0f1-74c1cdb4e09e')}; (*Output process data*)
+    PND_S1_INPUTS : PND_IO_512 { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('7b455519-3844-4d94-a723-6abf783b28da')}; (*Input process data*)
+    PND_IO_DRIVEN_BY_PLC : INT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('73e55f5b-b33d-462f-9841-4a90de0d5aa9')};
+    ESM_DATA : ESM_DAT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), Assignable(IsWritable := True), Origin('epd100'), SystemVariable } {Id('193b2553-69bc-4f7e-a497-033a1f04b093')};
+    RTC : RTC_TYPE { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('8af64542-106b-402c-afd9-98fc15840071')};
+    DEVICE_STATE : DEVICE_STATE_TYPE { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('51af04ba-06cd-44ab-b72d-6af7478a23ab')};
+    USER_PARTITION : PARTITION_INFO { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('c9c804c9-41ea-47a7-8593-50859f89aff1')};
+    PNIO_SYSTEM_BF : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('d360b486-030c-49cd-8e9c-314e2c4aa7e5')};
+    PNIO_SYSTEM_SF : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('e828d761-a52d-426c-8491-659e581b99a7')};
+    PNIO_MAINTENANCE_DEMANDED : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('80b1f8f6-d6bb-4cce-83c7-0afc6fe993b3')};
+    PNIO_MAINTENANCE_REQUIRED : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('ca855aaa-b792-4a84-ab43-715bb30dc7ef')};
+    PNIO_CONFIG_STATUS : WORD { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('f7b1be3a-b22d-475e-bf72-5d0b774438e2')};
+    PNIO_CONFIG_STATUS_ACTIVE : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('462a1e4c-ca38-4eda-b5cf-f7c329dd1c0d')};
+    PNIO_CONFIG_STATUS_READY : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('cd0ec072-0e46-4213-af66-dbbec9eb56c0')};
+    PNIO_CONFIG_STATUS_CFG_FAULT : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('55d7610a-295d-425f-a4e2-1e70b4af98fe')};
+    PNIO_FORCE_FAILSAFE : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), Assignable(IsWritable := True), Origin('epd145'), SystemVariable } {Id('63b8023c-cf5a-4c5f-aab6-dae7ea0c8757')};
+    PNIO_FORCE_PRIMARY : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), Assignable(IsWritable := True), Origin('epd159'), SystemVariable } {Id('cec4a9a7-fc96-49f2-9803-8106905a5cfb')};
+    IP_ACTIVE_SOCKETS AT %MW1.30000 : UINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('7ff310f0-fe60-4788-aae8-017e42f59f82')};
+    TLS_ACTIVE_SOCKETS AT %MW1.30100 : UINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('a60c0508-2ea3-4dfb-868e-17393c21524e')};
+    EC_MASTER_STATE : UDINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('3a76e8de-8285-4e96-bf88-4cd842a254bb')}; (*EtherCAT master state*)
+    EC_TOPOLOGY_OK : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('4ceeb1d6-0603-43f5-ab07-b20836f9a1d3')}; (*EtherCAT topology ok*)
+    EC_DC_IN_SYNC : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('4f9b8243-1be7-458e-a2e8-a9cfc946b837')}; (*EtherCAT DC in sync*)
+    EC_SLAVE_STATE : EC_ByteArray513 { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('946a7717-0b44-45f8-9e10-9d487fc247d4')}; (*EtherCAT slaves state*)
+    EC_SLAVE_LAST_AL_STATUS_CODE : EC_WordArray513 { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('8f7d5c78-393a-4832-83e4-e9ed88d817c1')}; (*EtherCAT slaves last al status code*)
+    EC_CYCLIC_LOST_FRAMES : UDINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('71345fa7-5fde-4b2a-9b51-6747bf1e4cf9')}; (*EtherCAT Number of frames lost in cyclic communication*)
+    EC_SLAVE_STATION_ADDRESS : EC_WordArray513 { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('9a715e6f-37cb-4d4d-a12a-fc902387aca3')}; (*Array with station addresses of all configured slaves*)
+    SB_DATA_VALID : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('04e6adf7-8e85-4722-804a-58af03fc6735')}; (*The SliceBus data exchange is active*)
+    SB_TOPOLOGY_OK : BOOL { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('67c8418c-e2a3-4b5d-9d1d-d166bd900d04')}; (*The SliceBus topology is valid.*)
+    SB_DIAG_ALARM_STATUS : ULINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('69a975e7-9ac9-48c0-b526-7a83af2e7399')}; (*SliceBus diagnostic state for each module.*)
+    SB_DIAG_ALARM_ACK_PENDING : ULINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4'), SystemVariable } {Id('eda1f83b-7b8a-4b90-96ac-11fdc249ba01')}; (*SliceBus diagnostic alarm acknowledge state for each module.*)
+    Y_FMK_AXISCOUNT_SERVO : UINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4') } {Id('ad6a0a9e-5c3d-47bd-88ca-580943a5408f')}; (* (!!! DO NOT MODIFY !!! - Variable is automatically linked to device)*)
+    Y_FMK_AXISCOUNT_EXTERNAL : UINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4') } {Id('401ac20f-54cb-4e22-8ab9-17f694749377')}; (* (!!! DO NOT MODIFY !!! - Variable is automatically linked to device)*)
+    Y_FMK_AXISCOUNT_VIRTUAL : UINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4') } {Id('f506a7ac-b92a-40c3-b9b5-ab5825dcbcf3')}; (* (!!! DO NOT MODIFY !!! - Variable is automatically linked to device)*)
+    Y_FMK_AXISCOUNT_OTHER : UINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4') } {Id('5194b4c8-9426-4784-a36a-a0ad7b539f7c')}; (* (!!! DO NOT MODIFY !!! - Variable is automatically linked to device)*)
+    Y_FMK_AXISCOUNT_TOTAL : UINT { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4') } {Id('58c327e2-5e1f-4979-9bcf-aa4100a5e9bd')}; (* (!!! DO NOT MODIFY !!! - Variable is automatically linked to device)*)
+    Y_FMK_MOTIONSCAN_INFO : FMK_MOTIONSCAN_TYPE { CustomGroupReference('971398c9-e054-4349-a1d9-e00a1840c9f4') } {Id('180abac0-8b6b-4423-8392-61ebb32c0828')}; (* (!!! DO NOT MODIFY !!! - Variable is automatically linked to device)*)
+    AXIS200 : AXIS_REF := (AxisNum := UINT#200, DriverType := Yt_DriverType#FMK) { CustomGroupReference('62716651-804b-4223-af0b-6769646191e4') } {Id('18b7519b-a161-4362-8aa6-9c7acf05629c')}; (* (!!! DO NOT MODIFY !!! - Variable is automatically linked to device)*)
+END_VAR
